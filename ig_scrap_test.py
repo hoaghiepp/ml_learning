@@ -1,4 +1,1 @@
-from sklearn.cluster import KMeans
-
-kmeans = KMeans()
-kmeans.fit
+from sklearn.metrics import silhouette_score

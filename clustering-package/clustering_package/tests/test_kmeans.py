@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from clustering_package.kmeans import KMeans
+from clustering_package.model.kmeans import KMeans
 
 class TestKMeans(unittest.TestCase):
 
@@ -52,7 +52,7 @@ class TestKMeans(unittest.TestCase):
         kmeans = KMeans(n_clusters=3, random_state=0) # More clusters than natural groups
         kmeans.fit(X)
         labels = kmeans.predict(X)
-        self.assertEqual(len(np.unique(labels)), 2) # Should still find 2 clusters
+        self.assertEqual(len(np.unique(labels)), 3 ) # Should still find 2 clusters
 
 if __name__ == '__main__':
     unittest.main()

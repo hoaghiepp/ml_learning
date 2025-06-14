@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from clustering_package.dbscan import DBSCAN
+from clustering_package.model.dbscan import DBSCAN
 
 class TestDBSCAN(unittest.TestCase):
 

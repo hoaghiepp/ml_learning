@@ -22,7 +22,7 @@ pip install -e .
 
 ```python
 import numpy as np
-from clustering_package.kmeans import KMeans
+from clustering_package.model.kmeans import KMeans
 from clustering_package.metrics import silhouette_score
 
 # Generate some sample data
@@ -50,15 +50,15 @@ print(f"KMeans Silhouette Score: {silhouette_avg:.2f}")
 
 ```python
 import numpy as np
-from clustering_package.dbscan import DBSCAN
+from clustering_package.model.dbscan import DBSCAN
 from clustering_package.metrics import silhouette_score
 
 # Generate some sample data
 X = np.array([
     [1, 1], [1.1, 1.1], [1.2, 1.2],  # Cluster 1
     [5, 5], [5.1, 5.1], [5.2, 5.2],  # Cluster 2
-    [10, 10], [10.1, 10.1], [10.2, 10.2], # Cluster 3
-    [20, 20], [20.1, 20.1], [0, 10], [10, 0] # Noise
+    [10, 10], [10.1, 10.1], [10.2, 10.2],  # Cluster 3
+    [20, 20], [20.1, 20.1], [0, 10], [10, 0]  # Noise
 ])
 
 # Initialize and fit DBSCAN

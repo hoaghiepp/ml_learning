@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from clustering_package.metrics import silhouette_score, davies_bouldin_index
+from clustering_package.metrics import silhouette_score
 
 class TestMetrics(unittest.TestCase):
 
